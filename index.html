@@ -1,0 +1,451 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	</head>
+	<body>
+	<div class="calc_wrapper">
+			<form action="" id="form_calc_pensia" class="calck1">
+				<input type="hidden" value="calc_pensia" name="calc_name">
+				<div class="calc">
+					<div class="calc_group">
+						<p class="calc_title">Пол</p>
+						<select name="" id="sex" class="calc_select ">
+							<option value="0">Мужской</option>  
+							<option value="1">Женский</option>
+						</select>
+					</div>
+					<div class="calc_group">
+						<label for="birth" class="calc_title">Год рождения
+						</label><br>
+						<input type="text" id="birth" class="calc_input">
+						<p class="allerted_text_none allerted_text_yep">Введите свой год рождения</p>
+					</div>   
+						<div class="calc_group">
+							<p class="calc_title">сколько детей есть\планируете иметь
+							</p>
+							<select name="" id="count_children" class="calc_select">
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">больше 3</option>
+							</select>
+						</div>
+							<div class="calc_group">
+								<p class="calc_title">Сколько лет Вы планируете осуществлять уход за каждым из детей
+									</p>
+								<select name="" id="count_age_children" class="calc_select">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>  
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="26">26</option>
+									<option value="27">27</option>
+									<option value="28">28</option>
+									<option value="29">29</option>
+									<option value="30">30</option>
+									<option value="31">31</option> 
+									<option value="32">32</option>
+									<option value="33">33</option>
+									<option value="34">34</option>
+									<option value="35">35</option>
+									<option value="36">36</option>
+									<option value="37">37</option>
+									<option value="38">38</option>
+									<option value="39">39</option>
+									<option value="40">40</option>
+									<option value="41">41</option>
+									<option value="42">42</option>
+									<option value="43">43</option>   
+								</select>
+							</div>  
+							<div class="calc_line-group">
+								<p class="calc_title">Сколько лет Вы предполагаете ухаживать за нетрудоспособными гражданами
+													</p>
+								<div class="calc_group">
+									<p class="calc_title">Года</p>
+									<select name="" id="count_age_retiree" class="calc_select calc_little-select">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option> 
+										<option value="32">32</option>
+										<option value="33">33</option>
+										<option value="34">34</option>
+										<option value="35">35</option>
+										<option value="36">36</option>
+										<option value="37">37</option>
+										<option value="38">38</option>
+										<option value="39">39</option>
+										<option value="40">40</option>
+										<option value="41">41</option>
+										<option value="42">42</option>
+										<option value="43">43</option>                    
+									</select>
+									</div> 
+									<div class="calc_group">
+										<p class="calc_title">Месяцы</p>
+										<select name="" id="count_month_retiree" class="calc_select calc_little-select">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>                 
+										</select>
+											</div> 
+											<div class="calc_group">
+												<p class="calc_title">Дни</p>
+												<select name="" id="count_day_retiree" class="calc_select calc_little-select">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+													<option value="13">13</option>
+													<option value="14">14</option>
+													<option value="15">15</option>   
+													<option value="16">16</option>
+													<option value="17">17</option>
+													<option value="18">18</option>
+													<option value="19">19</option>
+													<option value="20">20</option>
+													<option value="21">21</option>
+													<option value="22">22</option>
+													<option value="23">23</option>
+													<option value="24">24</option>
+													<option value="25">25</option>
+													<option value="26">26</option>
+													<option value="27">27</option>
+													<option value="28">28</option>
+													<option value="29">29</option>
+													<option value="30">30</option>  
+													<option value="31">31</option>              
+												</select>
+										</div> 
+							</div>
+							<div class="calc_line-group">
+											<p class="calc_title">Сколько лет Вы проходили/планируете проходить военную службу по призыву 
+													</p>
+									<div class="calc_group">
+											<p class="calc_title">Года</p>
+											<select name="" id="count_age_military" class="calc_select calc_little-select">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+												<option value="13">13</option>
+												<option value="14">14</option>
+												<option value="15">15</option>                 
+											</select>
+									</div> 
+									<div class="calc_group">
+										<p class="calc_title">Месяцы</p>
+										<select name="" id="count_month_military" class="calc_select calc_little-select">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>                 
+										</select>
+									</div> 
+											<div class="calc_group">
+									<p class="calc_title">Дни</p>
+									<select name="" id="count_day_military" class="calc_select calc_little-select">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>   
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>  
+										<option value="31">31</option>                  
+									</select>
+							</div> 
+							</div>
+							<div class="calc_group">
+								<p class="calc_title">Сколько лет после возникновения права на страховую пенсию Вы готовы не обращаться за её назначением
+								</p>
+								<select name="" id="count_not_turn" class="calc_select ">
+									<option value="1" >0</option>
+									<option value="1.056" >1</option>
+									<option value="1.12">2</option>
+									<option value="1.19">3</option>
+									<option value="1.27">4</option>
+									<option value="1.36">5</option>
+									<option value="1.46">6</option>
+									<option value="1.58">7</option>
+									<option value="1.73">8</option>
+									<option value="1.9">9</option>
+									<option value="2.11">10</option>                 
+								</select>
+							</div>   
+							<div class="calc-group">
+									<p class="card_title">Вы планируете работать :</p>
+								<div class="calc_line-justify">
+										<label class="calc_title calc_title_little calc_pointer" for="hired">Наёмным<br> работником
+										</label>
+										<input type="radio" name="worker" class=" calc_radio hired_worker" id="hired" checked value="hired">
+
+								</div>
+								<div class="calc_line-justify">
+												<label class="calc_title calc_title_little calc_pointer" for="self">Самозанятым<br> гражданином
+												</label>
+												<input type="radio" name="worker" class=" calc_radio hired_worker" id="self" value="self">
+
+										</div>
+										<div class="calc_line-justify">
+											<label class="calc_title calc_title_little calc_pointer" for="hired_self">Наёмным работником и<br> самозанятым гражданином
+											</label>
+											<input type="radio" name="worker" class="calc_radio hired_worker" id="hired_self" value="hired_self">
+										</div> 
+							</div>
+							<div class="calc_group">
+									<p class="calc_title">Ваш предполагаемый стаж в качестве наёмного работника</p>
+									<select name="" id="hired_age" class="calc_select ">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>  
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>                   
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>  
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>  
+										<option value="32">32</option>
+										<option value="33">33</option>
+										<option value="34">34</option>
+										<option value="35">35</option>
+										<option value="36">36</option>
+										<option value="37">37</option>                   
+										<option value="38">38</option>
+										<option value="39">39</option>
+										<option value="40">40</option>
+										<option value="41">41</option>
+										<option value="42">42</option>
+										<option value="43">43</option>
+										<option value="44">44</option>
+										<option value="45">45</option>  
+										<option value="46">46</option>
+										<option value="47">47</option>
+										<option value="48">48</option>
+										<option value="49">49</option>
+										<option value="50">50</option>
+										<option value="51">51</option>
+											</select>
+							</div>
+							<div class="calc_group">
+									<p class="calc_title">Ваш предполагаемый стаж в качестве самозанятого гражданина</p>
+									<select name="" id="self_age" class="calc_select ">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>  
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>                   
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>  
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>  
+										<option value="32">32</option>
+										<option value="33">33</option>
+										<option value="34">34</option>
+										<option value="35">35</option>
+										<option value="36">36</option>
+										<option value="37">37</option>                   
+										<option value="38">38</option>
+										<option value="39">39</option>
+										<option value="40">40</option>
+										<option value="41">41</option>
+										<option value="42">42</option>
+										<option value="43">43</option>
+										<option value="44">44</option>
+										<option value="45">45</option>  
+										<option value="46">46</option>
+										<option value="47">47</option>
+										<option value="48">48</option>
+										<option value="49">49</option>
+										<option value="50">50</option>
+										<option value="51">51</option>
+									</select>
+							</div>
+							<div class="calc_group">
+									<p class="calc_title">Ваша официальная зарплата (рублей в месяц, в ценах 2019-го года до вычета НДФЛ)
+									</p>
+									<input type="text" class="calc_input" id="salary">
+									<p class="allerted_text_none allerted_text_yep">Введите зарплату не ниже 11280 руб.</p>
+							</div> 
+							<div class="calc_group">
+											<input type="button" class="calc-btn" id="btn_salary_result" value="Рассчитать">
+									</div> 
+							<div class="calc_group">
+								<p class="calc_title">Итоги расчета
+													</p>
+								<div class="calc-result" id="salary_result"></div>
+							</div> 
+					</div>
+			</form>
+			</div>
+			<script src="main.js"></script>
+	</body>
+	</html>
